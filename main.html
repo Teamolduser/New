@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AyushBotz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<script src="https://use.fontawesome.com/de90fa6123.js"></script>
+</head>
+<body>
+  	<div class="welcome-message">
+	  <h1>AyushBotz</h1>
+		<p></p>
+		<button onclick="">support</button>
+		<button onclick="closeWelcomeMessage()">continue</button>
+		
+	</div>
+<div class="img">
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="animated infinite bounceIn logo">AyushBotz</label>
+		 	<ul>
+				<li><a href="scan.html"><i class="fas fa-qrcode"></i>scan</a></li>
+				<li><a href="repo.html"><i class="fas fa-file"></i> Repo</a></li>
+					<li><a href="bot.html"><i class="fa fa-spinner" aria-hidden="true"></i>    info bot</a></li>
+
+			
+				
+				<li><a href=""><i class="fas fa-hand-holding-medical"></i>    donate</a></li>
+					<li><a href="support.html"><i class="fa fa-whatsapp" aria-hidden="true"></i>    support</a></li>
+
+			
+
+				<script>
+		function closeWelcomeMessage() {
+			var welcomeMessage = document.querySelector(".welcome-message");
+			welcomeMessage.style.display = "none";
+		}
+  var text = "Welcome to AyushBotz, your friendly AI assistant designed to make your life easier! Our cutting-edge technology and intelligent algorithms are here to help you with everything from answering your questions to assisting with complex tasks.";
+  var index = 0;
+  var speed = 50; // Adjust the speed of typing here (in milliseconds)
+
+  function typeEffect() {
+    var paragraph = document.querySelector(".welcome-message p");
+    if (index < text.length) {
+      paragraph.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, speed);
+    }
+  }
+
+  typeEffect();
+</script>
+
+		 	</ul>
+	</nav>
+</div>
+</body>
+</html>

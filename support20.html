@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Ayush pandey</title>
+    <style>
+        body {
+            background-color: #000;
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .btn {
+            margin: 10px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            background-image: linear-gradient(
+                to right,
+                #ff00cc,
+                #ff0000,
+                #ff6600,
+                #ffcc00,
+                #00ff00,
+                #00ccff,
+                #6600ff,
+                #ff00cc
+            );
+            background-size: 200%;
+        }
+        .btn:hover {
+            background-position: right;
+            color: #333;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to right,
+                #ff00cc,
+                #ff0000,
+                #ff6600,
+                #ffcc00,
+                #00ff00,
+                #00ccff,
+                #6600ff,
+                #ff00cc
+            );
+            z-index: -1;
+            transition: all 0.5s ease-in-out;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+        .btn:hover::before {
+            transform: scaleX(1);
+        }
+        
+        /* Mobile Styles */
+        @media only screen and (max-width: 768px) {
+            body {
+                background-image: none;
+                background-color: #fff;
+            }
+            .btn {
+                margin: 10px 0;
+                padding: 10px 20px;
+                border-radius: 25px;
+                font-size: 1em;
+                box-shadow: none;
+                background-image: none;
+                background-color: #333;
+                color: #fff;
+            }
+            .btn:hover {
+                background-position: none;
+            }
+            .btn::before {
+                display: none;
+            }
+        }
+        
+  h1 {
+    position: absolute;
+  top: 2%;
+  left: 19%;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+
+    </style>
+</head>
+<body>
+  <h1>Welcome to our support page!</h1>
+    <a href="#" class="btn"><i class="fab fa-instagram"></i><br>Instagram</a>
+    <a href="#" class="btn"><i class="fab fa-whatsapp"></i><br>WhatsApp</a>
+    <a href="#" class="btn"><i class="fas fa-hands-helping"></i><br>Support Group</a>
+    <a href="#" class="btn"><i class="fas fa-robot"></i><br>Request for Bot</a>
+    <a href="#" class="btn"><i class="fas fa-backward"></i><br>Return to home page</a>
+</body>
+</html>

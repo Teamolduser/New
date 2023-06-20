@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: montserrat;
+
+}
+.img
+{
+	height: 100vh;
+	background-image: url(3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow-x: hidden;
+}
+nav{
+	background:transparent;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform:uppercase;
+	height: 15px;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+a:hover{
+	background-color:#c334ee8c;
+	animation-name: btn;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width:952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width:858px)
+{
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 90%;
+		height: 100vh;
+		background:#2c3e50 transparent;
+		top: 80px;
+		right: -110%;
+
+		text-align: center;
+		transition: all .5s;
+	}
+	
+	nav ul li{
+		display: block;
+		margin: 50px 50px;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover{
+		background:none;
+		color:#c334ee8c; 
+	}
+	#check:checked ~ ul{
+		right:0;
+	}
+}
+
+	.welcome-message {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	text-align: center;
+}
+
+.welcome-message p {
+	margin: 0 0 10px 0;
+}
+
+.welcome-message button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.welcome-message {
+		width: 80%;
+	}
+}
